@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Русская Рулетка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Русская Рулетка</h1>
+        <div id="playerInput">
+            <input type="text" id="playerName" placeholder="Введите ваш ник" required>
+            <button id="joinButton">Присоединиться</button>
+        </div>
+        <div id="lobby" style="display: none;">
+            <h2>Игроки в комнате:</h2>
+            <ul id="playerList"></ul>
+            <div id="timer" style="display: none;"></div>
+            <div id="gameArea" style="display: none;">
+                <h2>Игра начинается!</h2>
+                <div id="gun"></div>
+                <div id="winner" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
